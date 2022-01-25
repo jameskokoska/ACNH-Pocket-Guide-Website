@@ -1,0 +1,449 @@
+:root {
+  --nav-font-color:#ffffff;
+  --background: #f6f8fe;
+  --background-footer: #8999c9;
+  --background-nav: #5278c0d8;
+  --landing-font-color: #1e6443;
+  --accent-color: #f4bfc5;
+  --accent-color-dark: #25284031;
+  --main-font-color: #0c0c0c;
+  --accent-font-color: #ffffff4d;
+  --white: white;
+}
+
+.floatingchat-container-wrap, .floatingchat-container-wrap-mobi{
+  right:10px !important;
+  left:unset !important;
+}
+
+.floating-chat-kofi-popup-iframe, .floating-chat-kofi-popup-iframe-mobi, .floating-chat-kofi-popup-iframe-container-mobi{
+  position: fixed;
+  right:20px !important;
+  left:unset !important;
+}
+
+.floatingchat-container-mobi{
+  right:-20px !important;
+  left:unset !important;
+}
+
+
+@font-face {
+  font-family: "SofiaPro-Black";
+  src: url("assets/fonts/SofiaPro-Black.ttf");
+}
+
+@font-face {
+  font-family: "Arial-Round";
+  src: url("assets/fonts/ArialRound.ttf");
+}
+
+h1{
+  font-family: "SofiaPro-Black";
+}
+
+h2{
+  font-family: "SofiaPro-Black";
+}
+
+@font-face {
+  font-family: "GothamBook";
+  src: url("assets/fonts/Gotham\ Book.otf")  format("truetype");
+}
+
+html, body {
+  scroll-behavior: smooth; 
+  max-width: 100%;
+  overflow-x: hidden;
+  padding:0;
+  margin:0;
+  font-family: Helvetica, Arial, sans-serif;
+} 
+
+::-webkit-scrollbar {
+  max-width: 11px;
+  width: 0.9vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #686868; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7c7c7c;
+    background: #7c7c7c;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d3d3d3fd; 
+  border-radius: 30px;
+}
+
+a{
+  color: var(--white-font-color);
+  text-decoration: none;
+}
+
+.navBar{
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background-color: var(--background-nav);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 2px 2px 10px #20202033;
+  backdrop-filter: blur(8px);
+}
+
+.navBar a {
+  background: 
+    linear-gradient(to right, #00000000, #00000000),
+    linear-gradient(to right, var(--accent-font-color), var(--accent-font-color));
+  background-size: 0em 0em;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: background-size 300ms;
+  border-radius: 15px;
+}
+
+.navBar a:hover,
+.navBar a:focus {
+  background-size: 100% 100%, 100% 100%;
+  border-radius: 15px;
+}
+
+.navBarButtonContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0px 50px;
+}
+
+.navBarButton{
+  font-size: 17px;
+  padding: 19px 25px;
+  color:var(--nav-font-color);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 300ms;
+  font-weight: 600;
+}
+
+.navBarButton:hover{
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 700px) {
+  .navBar{
+    justify-content: center;
+  }
+  .navBarButtonContainer{
+    margin: 0px 10px;
+  }
+  .navBarButton{
+    font-size: 14px;
+    padding: 20px 10px;
+  }
+}
+
+.landingContainer{
+  width:100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.landingContainer h1{
+  font-size: 10vw;
+  line-height: 1;
+  margin:0;
+  text-shadow: 2px 2px 15px #ffffff;
+}
+
+.flexRow{
+  display: flex;
+  align-items: center;
+}
+
+.landingContainer h2{
+  font-size: 8vw;
+  line-height: 1;
+  margin:0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 15px #ffffff;
+}
+
+.appIcon{
+  width: 70px;
+  height: 70px;
+  padding: 0.3vw;
+  border-radius: 20%;
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0px 0px 20px #20202033;
+  margin-top: 0.5vw;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  transition: transform 300ms;
+}
+
+.playStoreButton{
+  width: 15vw;
+  margin-top: 10px;
+  margin-left: -0.5%;
+  transition: transform 300ms;
+}
+
+.playStoreButton:hover, .appIcon:hover{
+  transition: transform 300ms;
+  transform: scale(1.06);
+}
+
+@media only screen and (min-width: 2000px) {
+  .landingContainer h1{
+    font-size: 170px;
+  }
+  .landingContainer h2{
+    font-size: 150px;
+  }
+  .playStoreButton{
+    width: 300px;
+    margin-left: -0.7%;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .landingContainer h1{
+    font-size: 17vw;
+    width: 100%;
+  }
+  .landingContainer h2{
+    font-size: 12.5vw;
+    width: 100%;
+  }
+  .playStoreButton{
+    width: 45vw;
+    margin-top: 10px;
+    margin-left: -2%;
+    transition: transform 300ms;
+  }
+  .appIcon{
+    width: 55px;
+    height: 55px;
+    margin-right: 15px;
+  }
+}
+
+.background{
+  position: fixed;
+  transform: rotate(25deg);
+  width: 100vw;
+  height: 100vw;
+  top:0;
+  left:-50vw;
+  right:50vw;
+  display: flex;
+  flex-direction: row;
+  z-index:-1;
+  filter: blur(3px);
+}
+
+.background img{
+  user-select: none;
+  width: 16vw;
+  margin-left: -1%;
+  transition: transform 300ms;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #20202033;
+  margin: 30px;
+}
+
+.background .column{
+  display: flex;
+  flex-direction: column;
+  animation: backgroundMove 550s linear infinite;
+  animation-delay: -100s;
+}
+
+.background .opposite{
+  animation: backgroundMoveOpposite 550s linear infinite;
+  animation-delay: -200s;
+}
+
+@media only screen and (max-width: 800px) {
+  .background img{
+    width: 300px;
+  }
+  .background .column{
+    display: flex;
+    flex-direction: column;
+    animation: backgroundMoveMobile 550s linear infinite;
+  }
+  
+  .background .opposite{
+    animation: backgroundMoveMobileOpposite 550s linear infinite;
+  } 
+}
+
+@keyframes backgroundMove {
+  0% {
+    transform: translateY(-35%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-338%);
+  }
+}
+
+@keyframes backgroundMoveOpposite {
+  0% {
+    transform: translateY(-338%);
+    opacity: 0;
+  }
+  0.1% {
+    opacity: 1;
+  }
+  99.9% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-35%);
+  }
+}
+
+@keyframes backgroundMoveMobile {
+  0% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateY(-6500px);
+  }
+}
+
+@keyframes backgroundMoveMobileOpposite {
+  0% {
+    transform: translateY(-6500px);
+  }
+  100% {
+    transform: translateY(-500px);
+  }
+}
+
+.aboutContainer{
+  padding-top: 2vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  background-color: var(--background);
+  border-radius: 20px 20px 0px 0px;
+  padding-bottom: 30px;
+  box-shadow: 0px 2px 20px #20202081;
+}
+
+.aboutContainer h1{
+  font-size: 60px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.aboutContainer p{
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Arial-Round";
+}
+
+.footer{
+  background-color: var(--background-footer);
+  text-align: center;
+  font-size: 30px;
+}
+
+.footer p{
+  margin:0;
+  font-size: 22px;
+  font-family: "Arial-Round";
+}
+
+.footer h2{
+  margin: 0;
+  font-size: 30px;
+}
+
+.footer a{
+  text-decoration-color: transparent !important;
+  transition: text-decoration-color 250ms;
+  cursor: pointer;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.footer a:hover{
+  text-decoration-color: black !important;
+  transition: text-decoration-color 250ms;
+  text-decoration: underline;
+  user-select: all;
+}
+
+@media only screen and (max-width: 800px) {
+  .aboutContainer{
+    padding-top: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .aboutContainer h1{
+    font-size: 40px;
+  }
+  .aboutContainer p{
+    font-size: 20px;
+  }
+  .footer h2{
+    font-size: 20px;
+  }
+}
+
+.notes {
+  font-size: 12px !important;
+  margin-bottom: -50px;
+  text-align: left;
+  background-color: var(--background-footer);
+  padding: 0px 3px;
+}
+
+.break{
+  height:10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .desktop{
+    display:none
+  }
+  .background{
+    left:-20vw;
+  }
+  .notes{
+    text-align: center;
+    padding: 0px 20px;
+  }
+  .break{height: 30px;}
+}
+
+@media only screen and (min-width: 801px) {
+  .mobile{
+    display:none
+  }
+}
+
