@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "ACNH Pocket Guide App Website",
+  "short_name": "ACNH Pocket Guide",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "With a modern and well polished design ACNH Pocket Guide is the best guide for tracking your collection as you progress through the game. View information on collectibles and creatures, as well as upcoming in game events. With the latest game information, this is the one stop for all your ACNH needs!",
+  "related_applications": [{
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.acnh.pocket_guide"
+  }]
+}

@@ -576,4 +576,13 @@ a{
   .navBar a:focus {
     background-size: 100% 100%, 100% 100%;
   }
+  .footer a:hover{
+    text-decoration-color: white !important;
+  }
+  .policyContainer a{
+    color: #80b9ee;
+  }
+  .policyContainer a:hover{
+    text-decoration-color: #80b9ee !important;
+  }
 }
