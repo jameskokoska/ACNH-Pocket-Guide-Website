@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"> 
+    <title>ACNH Pocket Guide</title>
+    <meta name="viewport" content="width=380, initial-scale=1.0">
+  </head>
+  <body>
+    <script src="data.js"></script>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+      kofiWidgetOverlay.draw('dapperappdeveloper', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Support Me',
+        'floating-chat.donateButton.background-color': '#5278c0d8',
+        'floating-chat.donateButton.text-color': '#FFFFFF'
+      });
+    </script>
+    <div class="navBar dropIn">
+      <div class="navBarButtonContainer">
+        <a href="index.html">
+          <div class="navBarButton navBarButtonHover">
+            Home
+          </div>
+        </a>
+        <a href="index.html#about">
+          <div class="navBarButton navBarButtonHover">
+            About
+          </div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.acnh.pocket_guide">
+          <div class="navBarButton navBarButtonHover">
+            Download
+          </div>
+        </a>
+        <div class="navBarButton navBarButtonSelected">
+          Privacy Policy
+        </div>
+      </div>
+    </div>
+    <div class="flexCenter">
+      <div class="aboutContainer policyContainer">
+        <div class="flexRow">
+          <a href="https://play.google.com/store/apps/details?id=com.acnh.pocket_guide"><img alt="App Icon" src="./assets/icon.png" class="appIcon"></a>
+          <h1 class="landingHeader">Privacy Policy</h1>
+        </div>
+        <p>
+          This privacy policy is written for the <i>ACNH Pocket Guide</i> App by <i>DapperAppDeveloper</i>
+        </p>
+        <br/>
+        <h2>
+          How we collect data and how we use your data
+        </h2>
+        <h3>
+          We don’t and never will!  This is a free app for all to use and help users through their ACNH journey :)
+        </h3>
+        <h3>
+          For full transparency, and more details please read further.
+        </h3>
+        <br/>
+        <h4>Updated: January 25, 2022</h4>
+        <p><i>Added more policy information, new website therefore new format</i></p>
+        <h4>Updated: January 18, 2022</h4>
+        <p><i>Added information regarding crash analytics and logging, policy formatting, title changes</i></p>
+        <h4>Updated: January 12, 2022</h4>
+        <p><i>Added information regarding Firebase, liabilities of Terms of Use, and Licenses</i></p>
+        <h4>Updated: October 22, 2021</h4>
+        <p><i>To reflect new library changes with importing/exporting data and the cloud backup feature</i></p>
+        <br/>
+        <h2>App Data</h2>
+        <h3>Importing/Exporting Data to Local Storage Permissions</h3>
+        <p>
+          The (Expo React Native) SDK we use and the implementation of exporting data requires the user to specify a local folder on their device. We use the latest Android library, meaning only the folder you specify the app will be able to write the file to.
+          The importing of data requires the user to specify a local file on their device. The app will only read and only has access to this file.
+          This ‘exporting/importing of data’ feature is completely optional to the user and does not need to be enabled/used at all.
+        </p>
+        <p>
+          The app will not and should not ask for any other permissions to be granted. <br/>
+          This application will function completely fine with no permissions, apart from importing/exporting data.
+        </p>
+        <h3>Stored Data</h3>
+        <p>
+          All data is stored locally, on device using the React Native Async Storage library which can be seen here: <br/><a href="https://github.com/react-native-async-storage/async-storage">https://github.com/react-native-async-storage/async-storage</a>
+        </p>
+        <p>
+          The collected database can be cleared by going to<br/>
+          Settings > Reset Data > Reset<br/>
+          (this cannot be undone!)<br/>
+          Or by clearing application data and cache in application settings of the users phone
+        </p>
+        <h3>Cloud backup</h3>
+        <p>
+          The username is stored using Firebase Real Time Database maintained and managed by Google. The password is encrypted and stored on Firebase. The data manager does not have access to password data. Email data is only used to verify users identity - the following is an example case. If a user forgets their password and wants to reset it, their email will be used to verify their identity and request a password change through their original email.
+          Email data is not used otherwise apart from identity verification, logging in to access their respective data or uploading their respective data (manually or automatically - based on user settings). The email acts as a username and doesn't need verification when signing up.
+        </p>
+        <p>To find more about how Google’s Firebase handles data, go here:<br/><a href="https://firebase.google.com/support/privacy/">https://firebase.google.com/support/privacy/</a></p>
+        <h2>Terms of Use</h2>
+        <p>By downloading and installing or using this application provided to the user by the developer with the alias DapperAppDeveloper, you agree to the Terms of Use and Privacy Policy.</p>
+        <p>The app, ACNH Pocket Guide, is provided to you by DapperAppDeveloper without warranty of any kind, implied or expressed, as is. The developer will try their best, however, not all data may be accurate, and therefore there is no insurance or guarantee over this accuracy of any kind. The developer is not responsible and cannot be held accountable for any misinformation/incorrect data found within this app, and therefore damages of any kind that may have incurred.</p>
+        <p>The developer has the right to change the app, and everything related to it, in any way that they see fit. They hold the right to change any aspect within the app itself, which may include but not limited to: add, remove any features/capabilities, services provided by the app, such as backup and logins, and update/not update data within the app.</p>
+        <h2>Licenses</h2>
+        <p>This application was created using React Native, with the original App programmed in Flutter. This application and contents are NOT affiliated with Nintendo. All local artwork recreated/licensed. This application is not made for commercial use, and is provided at a price of 0$ (free) on the Google Play Store with no advertisements. All application source code is of property to respective owners/contributors listed on the Credits page and/or licenses associated within specific packages/libraries within this application.</p>
+        <p>The copyright of assets is likely to be held by the publisher where applicable. With limited number of low-resolution images for identification, critical commentary and information, the copyrighted content depicted in question qualifies as fair use under United States copyright law and therefore does not significantly impede the right of the copyright holder, since in this context the material is not being used to turn a profit and presents ideas that cannot be exhibited otherwise.</p>
+        <h3>Other Licenses</h3>
+        <p>Where applicable and needed, by law/without law, sources are provided as a hyperlink within the app itself and are only listed here as informative purposes, to not give/infer any credit given to the owner/source in this context</p>
+        <p><i>
+          Twemoji Icons Graphics licensed under CC-BY 4.0<br/>
+          Font Awesome icons<br/>
+          FlatIcons: from 'Freepik' and 'Pixel perfect'<br/>
+          All game data sourced from the community created spreadsheet<br/>
+          Translations sourced from the community spreadsheet<br/>
+        </i></p>
+        <h2>Crash Logging</h2>
+        <p>To log and send crash events and other in-app events to aid debugging, the tool Sentry is used. You can read more about Sentry’s policies here: <a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></p>
+        <p>This is to further help solve issues that arise during the development and release phase of the app. This data will not be used for any other purposes aside from development usage.</p>
+        <h2>Policy Information</h2>
+        <p>This policy is written in English. Any redundancies or discrepancies in other translations or other rewording within the application itself, refer back to the original English policy located here.</p>
+        <p>See the About page within the app for more details. The most up to date/informative policy is used when discrepancies occur between these 2 versions.</p>
+        <p>This policy will or may be updated with the latest information and any changes, and therefore tagged with a new date, without notice. We will stay true to whatever was once written, and will never take back the words said. We will never use any of the users data for any purposes, apart from this app’s (ACNH Pocket Guide) services; which may include but not limited to: debugging, testing, and support.</p>
+      </div>
+    </div>
+    <div class="footer" id="contact">
+      <div style="height: 20px;"></div>
+      <p>Suggestions, bugs or concerns? </p>
+      <a href="mailto:dapperappdeveloper@gmail.com"><h2>dapperappdeveloper@gmail.com</h2></a>
+      <div class="break"></div>
+      <p class="notes">ACNH Pocket Guide ©2020-2022. This application and contents are NOT affiliated with Nintendo. </p>
+    </div>
+  </body>
+</html>

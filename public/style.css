@@ -3,8 +3,6 @@
   --background: #f6f8fe;
   --background-footer: #8999c9;
   --background-nav: #5278c0d8;
-  --landing-font-color: #1e6443;
-  --accent-color: #f4bfc5;
   --accent-color-dark: #25284031;
   --main-font-color: #0c0c0c;
   --accent-font-color: #ffffff4d;
@@ -44,6 +42,14 @@ h1{
 
 h2{
   font-family: "SofiaPro-Black";
+}
+
+h3{
+  font-family: "SofiaPro-Black";
+}
+
+h4{
+  font-family: "Arial-Round";
 }
 
 @font-face {
@@ -122,6 +128,7 @@ a{
   flex-wrap: wrap;
   flex-direction: row;
   margin: 0px 50px;
+  user-select: none;
 }
 
 .navBarButton{
@@ -129,11 +136,14 @@ a{
   padding: 19px 25px;
   color:var(--nav-font-color);
   font-family: Arial, Helvetica, sans-serif;
-  transition: transform 300ms;
   font-weight: 600;
 }
 
-.navBarButton:hover{
+.navBarButtonHover{
+  transition: transform 300ms;
+}
+
+.navBarButtonHover:hover{
   transform: scale(1.1);
 }
 
@@ -146,8 +156,13 @@ a{
   }
   .navBarButton{
     font-size: 14px;
-    padding: 20px 10px;
+    padding: 18px 15px;
   }
+}
+
+.navBarButtonSelected{
+  background-color: #83a4d3;
+  border-radius: 15px;
 }
 
 .landingContainer{
@@ -156,7 +171,7 @@ a{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 10%;
+  padding-left: 10%;
 }
 
 .landingContainer h1{
@@ -183,11 +198,11 @@ a{
 .appIcon{
   width: 70px;
   height: 70px;
-  padding: 0.3vw;
+  padding: 6px;
   border-radius: 20%;
   background-color: rgb(248, 248, 248);
   box-shadow: 0px 0px 20px #20202033;
-  margin-top: 0.5vw;
+  margin-top: 10px;
   margin-right: 20px;
   margin-bottom: 10px;
   transition: transform 300ms;
@@ -237,6 +252,8 @@ a{
     width: 55px;
     height: 55px;
     margin-right: 15px;
+    padding: 3px;
+    margin-top: 10px;
   }
 }
 
@@ -356,7 +373,7 @@ a{
 .aboutContainer h1{
   font-size: 60px;
   margin: 0;
-  margin-bottom: 10px;
+  padding: 0;
 }
 
 .aboutContainer p{
@@ -447,3 +464,116 @@ a{
   }
 }
 
+.flexCenter{
+  display: flex;
+  justify-content: center;
+}
+
+.policyContainer p{
+  line-height: 1.2;
+}
+
+.policyContainer{
+  margin-top: 85px;
+  margin-bottom: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 900px;
+  border-radius: 15px;
+}
+
+.policyContainer h1{
+  padding:0;
+}
+
+.policyContainer h2{
+  margin:0;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  font-size: 35px;
+  line-height: 1.1;
+}
+
+.policyContainer h3{
+  margin:0;
+  margin-top: 15px;
+  font-size: 25px;
+  margin-bottom: 4px;
+  line-height: 1.1;
+}
+
+.policyContainer h4{
+  margin:0;
+  margin-top: 10px;
+  font-size: 22px;
+  margin-bottom: 4px;
+  line-height: 1.1;
+}
+
+.policyContainer p{
+  font-size: 20px;
+}
+
+.policyContainer a{
+  color: #3370aa;
+  text-decoration-color: transparent !important;
+  transition: text-decoration-color 250ms;
+  cursor: pointer;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.policyContainer a:hover{
+  text-decoration-color: #3370aa !important;
+  transition: text-decoration-color 250ms;
+  text-decoration: underline;
+  user-select: all;
+}
+
+@media (prefers-color-scheme: dark) {
+  body{
+    color:white;
+    background-color: #000000;
+  }
+  .appIcon{
+    background-color: #333333;
+    box-shadow: 0px 0px 4px #b8b8b833;
+  }
+  .background{
+    filter: brightness(0.9) blur(3px);
+  }
+  .footer, .notes{
+    background-color: #495474;
+  }
+  .landingContainer{
+    color:#ffffff;
+  }
+  .landingContainer h1{
+    text-shadow: 2px 2px 25px #000000;
+  }
+  .landingContainer h2{
+    text-shadow: 2px 2px 25px #000000;
+  }  
+  .aboutContainer{
+    background-color: #181818;
+  }
+  .navBarButtonSelected{
+    background-color: #6c89af;
+  }
+  .navBar{
+    background-color: #3f5d96d8;
+  }
+  .navBar a {
+    background: 
+      linear-gradient(to right, transparent, transparent),
+      linear-gradient(to right, #74bed44d, #72c6e74d);
+    background-size: 0em 0em;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    transition: background-size 300ms;
+  }
+  .navBar a:hover,
+  .navBar a:focus {
+    background-size: 100% 100%, 100% 100%;
+  }
+}
