@@ -186,6 +186,57 @@ a{
   align-items: center;
 }
 
+.flexRowCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexCenterColumn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1000px) {
+  .flexRowCenter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.stats{
+  margin: 30px;
+  margin-bottom: 0px;
+}
+
+.stats h2{
+  font-size: 35px;
+  margin: 0 50px;
+}
+
+.statsLabel{
+  font-size: 20px !important;
+}
+
+@media only screen and (max-width: 870px) {
+  .stats{
+    margin: 15px;
+    margin-bottom: 0px;
+  }
+
+  .stats h2{
+    font-size: 35px;
+    margin: 0 10px;
+  }
+
+  .statsLabel{
+    font-size: 15px !important;
+  }
+}
+
 .landingContainer h2{
   font-size: 8vw;
   line-height: 1;
