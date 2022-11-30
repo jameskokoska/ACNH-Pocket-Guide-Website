@@ -9,6 +9,19 @@
   --white: white;
 }
 
+.mobile-only{
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .mobile-only{
+    display: unset;
+  }
+  .desktop-only{
+    display: none;
+  }
+}
+
+
 .floatingchat-container-wrap, .floatingchat-container-wrap-mobi{
   right:10px !important;
   left:unset !important;
@@ -256,6 +269,15 @@ a{
   margin-top: 10px;
   margin-right: 20px;
   margin-bottom: 10px;
+  transition: transform 300ms;
+}
+
+.faqIcon{
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px #20202033;
+  margin-top: 5px;
+  margin-right: 10px;
   transition: transform 300ms;
 }
 
@@ -581,6 +603,18 @@ a{
   user-select: all;
 }
 
+
+hr{
+  color: #c7c7c7;
+  border-radius: 10px;
+  height:3px;
+  margin-top: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  background-color: #c7c7c7;
+  border: 0;
+}
+
 @media (prefers-color-scheme: dark) {
   body{
     color:white;
@@ -635,5 +669,8 @@ a{
   }
   .policyContainer a:hover{
     text-decoration-color: #80b9ee !important;
+  }
+  hr{
+    background-color: #505050;
   }
 }
