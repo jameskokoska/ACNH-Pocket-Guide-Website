@@ -53,6 +53,10 @@ h1{
   font-family: "SofiaPro-Black";
 }
 
+.landingHeader{
+  line-height: 1.1;
+}
+
 h2{
   font-family: "SofiaPro-Black";
 }
@@ -199,6 +203,12 @@ a{
   align-items: center;
 }
 
+.aboutContainerTitle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .flexRowCenter{
   display: flex;
   align-items: center;
@@ -321,12 +331,18 @@ a{
     margin-left: -2%;
     transition: transform 300ms;
   }
+  .playStoreButtonAbout{
+    margin:0;
+  }
   .appIcon{
     width: 55px;
     height: 55px;
     margin-right: 15px;
     padding: 3px;
     margin-top: 10px;
+  }
+  .aboutContainerTitle{
+    flex-direction: column;
   }
 }
 
