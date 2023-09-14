@@ -619,6 +619,22 @@ a{
   user-select: all;
 }
 
+.link a{
+  color: #67aef0;
+  text-decoration-color: #67aef0 !important;
+  transition: text-decoration-color 250ms;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link a:hover{
+  text-decoration-color: transparent !important;
+  transition: text-decoration-color 250ms;
+  text-decoration: underline;
+  user-select: all;
+}
+
+
 
 hr{
   color: #c7c7c7;
