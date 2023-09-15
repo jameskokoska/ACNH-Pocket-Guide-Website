@@ -50,6 +50,7 @@
 }
 
 h1{
+  font-weight: 300;
   font-family: "SofiaPro-Black";
 }
 
@@ -58,14 +59,17 @@ h1{
 }
 
 h2{
+  font-weight: 300;
   font-family: "SofiaPro-Black";
 }
 
 h3{
+  font-weight: 300;
   font-family: "SofiaPro-Black";
 }
 
 h4{
+  font-weight: 200;
   font-family: "Arial-Round";
 }
 
