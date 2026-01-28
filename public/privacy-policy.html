@@ -21,15 +21,6 @@
     <meta name="twitter:image" content="/assets/preview.png">
   </head>
   <body>
-    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-    <script>
-      kofiWidgetOverlay.draw('dapperappdeveloper', {
-        'type': 'floating-chat',
-        'floating-chat.donateButton.text': 'Support Me',
-        'floating-chat.donateButton.background-color': '#5278c0d8',
-        'floating-chat.donateButton.text-color': '#FFFFFF'
-      });
-    </script>
     <div class="navBar dropIn">
       <div class="navBarButtonContainer">
         <a href="index.html">
@@ -60,23 +51,30 @@
     <div class="flexCenter">
       <div class="aboutContainer policyContainer">
         <div class="flexRow">
-          <a href="https://play.google.com/store/apps/details?id=com.acnh.pocket_guide"><img alt="App Icon" src="./assets/icon.png" class="appIcon"></a>
+          <a href="https://play.google.com/store/apps/details?id=com.acnh.pocket_guide"><img alt="App Icon" src="./assets/icon.png" class="appIcon"/></a>
           <h1 class="landingHeader">Privacy Policy</h1>
         </div>
+
         <p>
-          This privacy policy is written for the <i>ACNH Pocket Guide</i> App by <i>DapperAppDeveloper</i>
+          This privacy policy and terms of use applies to the <i>ACNH Pocket Guide</i> app and related services provided by
+          <i>DapperAppDeveloper</i> ("we", "us", "our").
         </p>
-        <br/>
-        <h2>
-          How we collect data and how we use your data
-        </h2>
-        <h3>
-          We don’t and never will!  This is a free app for all to use and help users through their ACNH journey :)
-        </h3>
-        <h3>
-          For full transparency, and more details please read further.
-        </h3>
-        <br/>
+
+        <h2>Summary</h2>
+        <p>
+          <b>By default, ACNH Pocket Guide runs using local, on-device storage.</b> We do not collect data from you unless
+          you choose to use optional features that exports your data across a network connection (for example, <b>Cloud Backup</b>).
+        </p>
+        <p>
+          When Cloud Backup is enabled and used, we collect and process limited data strictly to provide that backup service
+          (described below). We do not sell or share your data and we do not use it for advertising.
+        </p>
+
+        <br />
+
+        <h4>Updated: January 27, 2026</h4>
+        <p><i>Clarified Cloud Backup data collection and processing, removed Sentry references, clarified Catalog Scanner on-device processing/no collection, tighten legalize</i></p>
+
         <h4>Updated: February 24, 2024</h4>
         <p><i>Added information about cloud backup service data deletion</i></p>
         <h4>Updated: December 8, 2022</h4>
@@ -89,66 +87,159 @@
         <p><i>Added information regarding Firebase, liabilities of Terms of Use, and Licenses</i></p>
         <h4>Updated: October 22, 2021</h4>
         <p><i>To reflect new library changes with importing/exporting data and the cloud backup feature</i></p>
+
         <br/>
+
         <h2>App Data</h2>
+
         <h3>Importing/Exporting Data to Local Storage Permissions</h3>
         <p>
-          The (Expo React Native) SDK we use and the implementation of exporting data requires the user to specify a local folder on their device. We use the latest Android library, meaning only the folder you specify the app will be able to write the file to.
-          The importing of data requires the user to specify a local file on their device. The app will only read and only has access to this file.
-          This ‘exporting/importing of data’ feature is completely optional to the user and does not need to be enabled/used at all.
+          The (Expo React Native) SDK and the implementation of exporting data require the user to specify a local folder on
+          their device. We use the latest Android library, meaning only the folder you specify the app will be able to write
+          the file to. Importing data requires the user to specify a local file on their device. The app will only read and
+          only has access to that selected file.
         </p>
         <p>
-          The app will not and should not ask for any other permissions to be granted. <br/>
-          This application will function completely fine with no permissions, apart from importing/exporting data.
+          Importing/exporting is optional. The app will not request any additional permissions beyond what is necessary for
+          the features you choose to use.
         </p>
-        <h3>Stored Data</h3>
+
+        <h3>Stored Data (On Device)</h3>
         <p>
-          All data is stored locally, on device using the React Native Async Storage library which can be seen here: <br/><a href="https://github.com/react-native-async-storage/async-storage">https://github.com/react-native-async-storage/async-storage</a>
+          Your in-app data is stored locally on your device using the React Native Async Storage library:
+          <br /><a href="https://github.com/react-native-async-storage/async-storage"
+            >https://github.com/react-native-async-storage/async-storage</a
+          >
         </p>
         <p>
-          The collected database can be cleared by going to<br/>
-          Settings > Reset Data > Reset<br/>
-          (this cannot be undone!)<br/>
-          Or by clearing application data and cache in application settings of the users phone
+          Local data can be cleared by going to:
+          <br />
+          Settings &gt; Reset Data &gt; Reset
+          <br />
+          (this cannot be undone)
+          <br />
+          Or by clearing application data and cache in your device settings.
         </p>
-        <h3>Cloud backup</h3>
+
+        <h3>Cloud Backup (Optional)</h3>
         <p>
-          The username is stored using Firebase Real Time Database maintained and managed by Google. The password is encrypted and stored on Firebase. The data manager does not have access to password data. Email data is only used to verify users identity - the following is an example case. If a user forgets their password and wants to reset it, their email will be used to verify their identity and request a password change through their original email.
-          Email data is not used otherwise apart from identity verification, logging in to access their respective data or uploading their respective data (manually or automatically - based on user settings). The email acts as a username and doesn't need verification when signing up.
+          If you enable and use Cloud Backup, the app will collect and transmit data to provide that service. Cloud Backup is
+          maintained using Google Firebase services.
         </p>
-        <p>To find more about how Google’s Firebase handles data, go here:<br/><a href="https://firebase.google.com/support/privacy/">https://firebase.google.com/support/privacy/</a></p>
+
+        <h4>What we collect/process for Cloud Backup</h4>
         <p>
-          Data stored on cloud backup services can be subject to deletion at any time, especially if the user has not accessed their account within a specified period, typically at least a year from their last sign-in date. This practice is implemented to ensure that unused information is not unnecessarily retained, safeguarding the privacy of users. While data may be scheduled for deletion, it can persist for an extended duration unless explicitly requested to be removed by the user.
+          When Cloud Backup is used, we process and store:
+          <br />
+          • <b>Account identifiers</b> you provide (such as email/username) to create and access your backup account
+          <br />
+          • <b>Authentication data</b> (your password is encrypted; we do not store it in plaintext)
+          <br />
+          • <b>Backup content</b> (your ACNH Pocket Guide app data that you choose to upload, either manually or automatically
+          based on your settings)
+        </p>
+
+        <h4>How we use Cloud Backup data</h4>
+        <p>
+          Cloud Backup data is used only to:
+          <br />
+          • authenticate you
+          <br />
+          • store and restore your backup content to your account
+          <br />
+          • support account recovery flows where applicable (for example, verifying identity for password reset)
+        </p>
+
+        <p>
+          To learn more about Google Firebase’s privacy practices, see:
+          <br /><a href="https://firebase.google.com/support/privacy/">https://firebase.google.com/support/privacy/</a>
+        </p>
+
+        <h4>Retention and deletion</h4>
+        <p>
+          Data stored via Cloud Backup may be deleted by the service provider if an account is inactive for an extended
+          period. Data may also persist for a period of time unless you request removal or delete your account (where the
+          feature is available).
+          <br />
           More information can be found under <b>'Account Deletion'</b> of the FAQ page.
         </p>
+
+        <h2>Diagnostics and Crash Reporting</h2>
+        <p>
+          We do not run third-party crash reporting that collects and transmits your crash data as a
+          service. If you contact support, you may choose to share information (such as screenshots or logs) to help diagnose
+          issues.
+        </p>
+
         <h2>Terms of Use</h2>
-        <p>By downloading and installing or using this application provided to the user by the developer with the alias DapperAppDeveloper, you agree to the Terms of Use and Privacy Policy.</p>
-        <p>The app, ACNH Pocket Guide, is provided to you by DapperAppDeveloper without warranty of any kind, implied or expressed, as is. The developer will try their best, however, not all data may be accurate, and therefore there is no insurance or guarantee over this accuracy of any kind. The developer is not responsible and cannot be held accountable for any misinformation/incorrect data found within this app, and therefore damages of any kind that may have incurred.</p>
-        <p>The developer has the right to change the app, and everything related to it, in any way that they see fit. They hold the right to change any aspect within the app itself, which may include but not limited to: add, remove any features/capabilities, services provided by the app, such as backup and logins, and update/not update data within the app.</p>
-        <h2>Licenses</h2>
-        <p>This application was created using React Native, with the original App programmed in Flutter. This application and contents are NOT affiliated with Nintendo. All local artwork recreated/licensed. This application is not made for commercial use, and is provided at a price of 0$ (free) on the Google Play Store with no advertisements. All application source code is of property to respective owners/contributors listed on the Credits page and/or licenses associated within specific packages/libraries within this application.</p>
-        <p>The copyright of assets is likely to be held by the publisher where applicable. With limited number of low-resolution images for identification, critical commentary and information, the copyrighted content depicted in question qualifies as fair use under United States copyright law and therefore does not significantly impede the right of the copyright holder, since in this context the material is not being used to turn a profit and presents ideas that cannot be exhibited otherwise.</p>
+        <p>
+          By downloading, installing, or using this application, you agree to this Privacy Policy and the Terms of Use.
+        </p>
+        <p>
+          The app is provided "as is" and "as available", without warranties of any kind, express or implied, including but
+          not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
+        </p>
+        <p>
+          While we make reasonable efforts to keep information accurate, content may be incomplete, outdated, or incorrect.
+          To the maximum extent permitted by law, we will not be liable for any indirect, incidental, special, consequential,
+          or punitive damages, or any loss of data, profits, or goodwill arising from your use of the app.
+        </p>
+        <p>
+          We may modify, suspend, or discontinue any part of the app or related services (including Cloud Backup) at any time.
+        </p>
+
+        <h2>Intellectual Property, Licenses, Attribution, and Disclaimer</h2>
+        <p> ACNH Pocket Guide is an independent, fan-made companion application and is not affiliated with, endorsed, sponsored, or specifically approved by Nintendo Co., Ltd. or any of its subsidiaries or affiliates. Nintendo, Animal Crossing, and related names and assets are trademarks and copyrighted works of Nintendo and/or its licensors.</p>
+
+        <p>This app may display certain game-related visual references (including low-resolution images or icons) solely for the purpose of identifying and cataloging in-game items, characters, and concepts, and to support commentary, reference, and informational use within the app. Where applicable, these images are presented in a limited, non-substitutive manner and are not intended to replace the original game content. These visual reference assets are not distributed in the app bundle itself, and where applicable, are downloaded externally.</p>
+
+        <p>Any high-quality images, illustrations, layouts, and UI visuals shown in the app may be "inspired by" the Animal Crossing: New Horizons aesthetic and are original works created for this app and are not direct reproductions of Nintendo’s original art assets.</p>
+
+        <p>All rights in third-party content remain the property of their respective owners.</p>
+
         <h3>Other Licenses</h3>
-        <p>Where applicable and needed, by law/without law, sources are provided as a hyperlink within the app itself and are only listed here as informative purposes, to not give/infer any credit given to the owner/source in this context</p>
-        <p><i>
-          Twemoji Icons Graphics licensed under CC-BY 4.0<br/>
-          Font Awesome icons<br/>
-          FlatIcons: from 'Freepik' and 'Pixel perfect'<br/>
-          All game data sourced from the community created spreadsheet<br/>
-          Translations sourced from the community spreadsheet<br/>
-        </i></p>
-        <h2>Crash Logging</h2>
-        <p>To log and send crash events and other in-app events to aid debugging, the tool Sentry is used. You can read more about Sentry’s policies here: <a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></p>
-        <p>This is to further help solve issues that arise during the development and release phase of the app. This data will not be used for any other purposes aside from development usage.</p>
+        <p>
+          Additional licenses may be provided within the app itself and are only listed here for
+          informative purposes.
+        </p>
+        <p>
+          <i>
+            Twemoji Icons Graphics licensed under CC-BY 4.0<br />
+            Font Awesome icons<br />
+            FlatIcons: from 'Freepik' and 'Pixel perfect'<br />
+            All game data sourced from the community created spreadsheet<br />
+            Translations sourced from the community spreadsheet<br />
+          </i>
+        </p>
+
         <h2>Policy Information</h2>
-        <p>This policy is written in English. Any redundancies or discrepancies in other translations or other rewording within the application itself, refer back to the original English policy located here.</p>
-        <p>See the About page within the app for more details. The most up to date/informative policy is used when discrepancies occur between these 2 versions.</p>
-        <p>This policy will or may be updated with the latest information and any changes, and therefore tagged with a new date, without notice. We will stay true to whatever was once written, and will never take back the words said. We will never use any of the users data for any purposes, apart from this app’s (ACNH Pocket Guide) services; which may include but not limited to: debugging, testing, and support.</p>
+        <p>
+          We may update this policy from time to time. Updates will be reflected by the "Updated" date at the top of this
+          document.
+        </p>
+
         <h2>Catalog Scanner App</h2>
-        <p>The terms of service for the application ACNH Pocket Guide listed in this document also apply to the Catalog Scanner application where applicable.</p>
-        <p>This application does not send any data off device. The app is fully functional without internet. When the collection is exported to ACNH pocket guide, the clipboard is used. A user interaction is required to import the data.</p>
-        <p>The catalog scanned is stored locally on device, using the Flutter library Shared Preferences, which can be seen here: <a href="https://pub.dev/packages/shared_preferences">https://pub.dev/packages/shared_preferences</a>. This collection can be cleared within the application or by clearing application data and cache in the application settings of the users phone.</p>
-        <p>This application required the use of the camera for the only purpose of scanning the catalog entries.  <a href="https://developers.google.com/ml-kit">Google ML Kit</a> is used to recognize text and the policies can be seen here: <a href="https://developers.google.com/ml-kit/terms">https://developers.google.com/ml-kit/terms</a>.</p>
+        <p>
+          The Catalog Scanner application has separate behavior from ACNH Pocket Guide with respect to data processing and cloud backup services:
+          <b>All scanning and recognition is processed on device and no data is collected by us for the Catalog Scanner app.</b>
+          <b>The catalog scanner does not provide any cloud backup services, and therefore no data is transmitted off the device.</b>
+        </p>
+        <p>
+          The Catalog Scanner app does not transmit scanned images or recognized text to us. The app is fully functional
+          without internet. When exporting to ACNH Pocket Guide, the clipboard is used and user interaction is required to
+          transfer data.
+        </p>
+        <p>
+          The catalog collection is stored locally on device using Flutter Shared Preferences:
+          <a href="https://pub.dev/packages/shared_preferences">https://pub.dev/packages/shared_preferences</a>. This
+          collection can be cleared within the application or by clearing application data and cache in device settings.
+        </p>
+        <p>
+          The Catalog Scanner app requires the camera solely for scanning catalog entries. Google ML Kit is used for text
+          recognition:
+          <a href="https://developers.google.com/ml-kit">https://developers.google.com/ml-kit</a>. ML Kit terms:
+          <a href="https://developers.google.com/ml-kit/terms">https://developers.google.com/ml-kit/terms</a>.
+        </p>
       </div>
     </div>
     <div class="footer" id="contact">
